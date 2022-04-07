@@ -1,14 +1,18 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+//apri
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
+const hambu = document.getElementsByClassName ('.header-right');
+console.log(hambu);
+
+const active = document.getElementsByClassName ('.hamburger-menu');
+console.log(active);
+
+hambu.addEventListener('click', function(){
+  
+  active.classList.add('active');
+
 });
 
-document.querySelectorAll(".nav-link").forEach((link) =>
-  link.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-  })
-);
+
+//chiudi
+
+// const chiudi = document.getElementsByClassName('.fas fa-times');
