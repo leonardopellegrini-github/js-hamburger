@@ -1,18 +1,21 @@
 //apri
 
-const hambu = document.getElementsByClassName ('.header-right');
-console.log(hambu);
+const apri = document.querySelector ('.fa-bars');
 
-const active = document.getElementsByClassName ('.hamburger-menu');
-console.log(active);
+const active = document.querySelector ('.hamburger-menu');
 
-hambu.addEventListener('click', function(){
+const chiudi = document.querySelector ('.fa-times');
+
+
+apri.addEventListener('click', function(){
   
   active.classList.add('active');
 
 });
 
+chiudi.addEventListener('click', function(){
+  
+  active.classList.remove('active');
 
-//chiudi
+});
 
-// const chiudi = document.getElementsByClassName('.fas fa-times');
